@@ -1,0 +1,23 @@
+[package]
+name = "perf-log"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "*"
+slog = "*"
+tracing = "*"
+env_logger = "*"
+log4rs = "*"
+flexi_logger = { version = "*", features = ["async"] }
+tracing-log = "*"
+slog-stdlog = "*"
+slog-term = "*"
+slog-async = "*"
+slog-scope = "*"
+clap = "*"
+lazy_static = "*"
+tracing-subscriber = "*"
+tracing-appender = "*"

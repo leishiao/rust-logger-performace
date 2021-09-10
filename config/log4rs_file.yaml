@@ -1,0 +1,14 @@
+# 加载配置文件改动时间间隔
+refresh_rate: 30 seconds
+appenders:
+  monitor_files: #输出monitor到文件
+    kind: file
+    path: logs/log4rs_file.log #日志文件位置
+    append: false
+    encoder:
+      pattern: "{d} {l} {M} {m}{n}"
+
+root:
+  level: info #日志级别
+  appenders:
+    - monitor_files
